@@ -135,7 +135,6 @@ function App() {
             let positiveWordsFound = positiveWords.filter((item) => banglaWords.includes(item));
             let negativeWordsFound = negativeWords.filter((item) => banglaWords.includes(item));
 
-            console.log(positiveWordsFound, negativeWordsFound);
 
             if(positiveWordsFound.length > negativeWordsFound.length && positiveWordsFound.length > 0) {
               item.data_label = "1";
