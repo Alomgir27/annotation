@@ -336,6 +336,7 @@ function App() {
       <button onClick={() => {localStorage.clear(); setFileData([])}} style={{ margin: "0 10px", padding: "10px 20px", marginBottom : '5px'  }}>Clear</button>
       <p style={{ marginTop: "10px" }}>Add Positive and Negative Words.</p>
       <p style={{ fontWeight: 'bold'}}> NB: if you add a word both positive and negative then it will be removed from both automatically.</p>
+      <p style={{ fontWeight: 'bold'}}> NB: In XLSX file, the column name should be "Comments" and "data_label".</p>
       {fileData.length > 0 && <TableList />}
     </div>
   );
